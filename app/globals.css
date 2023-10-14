@@ -1,5 +1,38 @@
-*{
-  padding: 0;
+* {
   margin: 0;
-  background-color: aquamarine;
+  padding: 0;
+}
+
+body {
+  color: rgb(0, 0, 0);
+  background-image: url("../public/HD\ night\ wallpapers.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+  width: fit-content;
+}
+
+.Contener_Header{
+  background-color: blueviolet;
+}
+
+
+.Conterner_Nav{
+  background-color: cyan;
+}
+
+.container_Body{
+  background-color: rgba(0, 0, 255, 0.526);
+  display: inline-flex;
+  margin: 2pc 2pc;
+}
+.container_Body .Left{
+  background-color: rgba(255, 0, 0, 0.411);
+  display: inline-flex;
+  margin: 2pc 2pc;
+}
+.container_Body .Right{
+  background-color: rgba(0, 255, 0, 0.501);
+  display: inline-flex;
+  margin: 2pc 2pc;
 }
