@@ -10,6 +10,7 @@ body {
   background-size:cover;
   height: 100vh;
   width: fit-content;
+  color: aliceblue;
 }
 
 .Contener_Header{
@@ -35,4 +36,9 @@ body {
   background-color: rgba(0, 255, 0, 0.501);
   display: inline-flex;
   margin: 2pc 2pc;
+}
+
+.Footer_Contener{
+  margin: 2pc 2pc;
+  background-color: rgba(0, 0, 0, 0.498);
 }
