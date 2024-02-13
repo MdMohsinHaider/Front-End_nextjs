@@ -96,4 +96,11 @@ hr{
 hr:hover{
   box-shadow: 0px 8px 16px 0px rgb(247, 232, 150);
 }
+h1:hover{
+  color: red;
+}
+body{
+  background-color:black;
+  color: white;
+}
 
