@@ -21,8 +21,14 @@ export function GET(request) {
 export function POST(request) {
     const body = request.body;
     console.log(body);
+    console.log(request.method);
+    console.log("app ka cookesis"+request.cookies);
+    console.log("app ka header hai "+request.headers);
     return NextResponse.json({
-        massage:"posting user data"
+        massage:"posting user data",
+        dataCookies:request.cookies,
+        requestype:request.method,
+        requesheader:request.headers
     })
  };
 
