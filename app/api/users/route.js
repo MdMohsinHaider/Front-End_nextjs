@@ -1,3 +1,4 @@
+import { log } from "console";
 import { NextResponse } from "next/server"
 
 export function GET(request) {
@@ -18,19 +19,20 @@ export function GET(request) {
     return NextResponse.json(users);
 };
 
-export function POST(request) {
-    const body = request.body;
-    console.log(body);
-    console.log(request.method);
-    console.log("app ka cookesis"+request.cookies);
-    console.log("app ka header hai "+request.headers);
+export async function POST(request) {
+    // const body = request.body;
+    // console.log(body);
+    // console.log(request.method);
+    // console.log("app ka cookesis"+request.cookies);
+    // console.log("app ka header hai "+request.headers);
+
+    const jsonData = await request.json();
+    console.log(jsonData);
+
     return NextResponse.json({
-        massage:"posting user data",
-        dataCookies:request.cookies,
-        requestype:request.method,
-        requesheader:request.headers
+        massage: "posting user data",
     })
- };
+};
 
 export function DELETE(request) {
     console.log("detete method");
