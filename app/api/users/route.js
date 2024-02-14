@@ -19,6 +19,15 @@ export function GET(request) {
     return NextResponse.json(users);
 };
 
+
+
+
+
+
+
+
+
+
 export async function POST(request) {
     // const body = request.body;
     // console.log(body);
@@ -26,13 +35,25 @@ export async function POST(request) {
     // console.log("app ka cookesis"+request.cookies);
     // console.log("app ka header hai "+request.headers);
 
-    const jsonData = await request.json();
-    console.log(jsonData);
+    const textData =await request.text();
+    console.log(textData);
+
+    // const jsonData = await request.json();
+    // console.log(jsonData);
 
     return NextResponse.json({
         massage: "posting user data",
     })
 };
+
+
+
+
+
+
+
+
+
 
 export function DELETE(request) {
     console.log("detete method");
@@ -41,5 +62,9 @@ export function DELETE(request) {
         status: "true"
     })
 };
+
+
+
+
 
 export function PUT() { };
