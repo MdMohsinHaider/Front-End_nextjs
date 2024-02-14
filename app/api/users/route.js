@@ -18,7 +18,13 @@ export function GET(request) {
     return NextResponse.json(users);
 };
 
-export function POST() { };
+export function POST(request) {
+    const body = request.body;
+    console.log(body);
+    return NextResponse.json({
+        massage:"posting user data"
+    })
+ };
 
 export function DELETE(request) {
     console.log("detete method");
