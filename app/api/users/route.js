@@ -35,11 +35,11 @@ export async function POST(request) {
     // console.log("app ka cookesis"+request.cookies);
     // console.log("app ka header hai "+request.headers);
 
-    const textData =await request.text();
-    console.log(textData);
+    // const textData =await request.text();
+    // console.log(textData);
 
-    // const jsonData = await request.json();
-    // console.log(jsonData);
+    const jsonData = await request.json();
+    console.log(jsonData);
 
     return NextResponse.json({
         massage: "posting user data",
