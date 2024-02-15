@@ -1,6 +1,6 @@
-import { log } from "console";
-import { NextResponse } from "next/server"
-
+import {connectDB} from "@/helper/db";
+import { NextResponse } from "next/server";
+connectDB();
 export function GET(request) {
     const users = [
         {
