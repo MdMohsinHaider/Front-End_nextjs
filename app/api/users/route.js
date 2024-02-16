@@ -13,9 +13,10 @@ export function GET(request) {
         },
         {
             name: "devil hell",
-            phone: 12345678
-        }
+            phone: 12345678,
+        },
     ]
+    console.log("GET REQUEST");
     return NextResponse.json(users);
 };
 
