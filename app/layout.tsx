@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Navbar from "@/components/Navbar"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,34 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* nav bar  */}
-        <nav className="nav-bar">
-          <div className="logo">Vigyaapan</div>
-          <ul className="nav-links">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Profile</a>
-            </li>
-          </ul>
-          <div className="user-profile">
-            <div className="dropdown">
-              <button className="dropbtn">Profile</button>
-              <div className="dropdown-content">
-                <a href="#">Settings</a>
-                <a href="#">Your Profile</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <hr />
+
+        <Navbar />
         {children}
       </body>
     </html>
